@@ -13,3 +13,14 @@
 .heading h3{
     display: inline;
 }
+
+#createdBy{
+    position:sticky;
+    bottom:0;
+    z-index: 1;
+    width:100%;
+}
+
+#instructions{
+    color:white;
+}
