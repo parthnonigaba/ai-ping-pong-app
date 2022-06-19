@@ -26,9 +26,10 @@ var ball = {
 }
 
 function setup(){
+  game_status = "";
   var canvas =  createCanvas(700,600);
   canvas.center();
-  canvas.parent();
+  canvas.parent('canvas');
 
   video = createCapture(VIDEO);
   video.size(700,600);
@@ -42,6 +43,12 @@ function setup(){
 function draw(){
 
   image(video, 0, 0, 700, 600);
+
+  if(scoreRightWrist > 0.2){
+    fill("#FF0000");
+    stroke("#FF0000");
+    circle(rightWristX, rightWristY, 20)
+  }
 
   
 
@@ -191,4 +198,8 @@ function gotPoses(results){
     scoreRightWrist = results[0].pose.keypoints[10].score;
     console.log(scoreRightWrist);
   }
+}
+
+function startGame(){
+  
 }
