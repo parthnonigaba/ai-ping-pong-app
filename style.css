@@ -1,30 +1,41 @@
 
-
-.heading{
-    color:white;
-    width: 100%;
-    font-size: 30px;
+.heading
+{
+width: 100%;
+text-align: left;
+}
+.heading h3{
+    display: inline;
 }
 
 .heading button{
     float: right;
     border: 1px solid white;
 }
-.heading h3{
-    display: inline;
+
+#start ,#status, #restart
+{
+font-size: 22px;
 }
 
-#createdBy{
-    position:sticky;
-    bottom:0;
-    z-index: 1;
-    width:100%;
+.modal-dialog
+{
+    width: 70%;
 }
-
-#instructions{
-    color:white;
+.modal-body
+{
+    text-align: left;
+    font-size: 20px;
 }
-
-.canvas{
-    box-shadow: 10px 10px 10px white;
+h4
+{
+   background-color: grey;
+   color:white;
+   line-height: 2;
 }
+canvas 
+  {
+      border:3px solid white;
+      border-radius: 20px;
+      box-shadow:  5px 5px 5px white;
+  }
